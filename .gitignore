@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.env
+.venv/
+venv/
+instance/
+artifacts/
+models/
+.data/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+data/courses_raw.csv
+data/courses_clean.csv

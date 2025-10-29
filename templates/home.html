@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row align-items-center">
+  <div class="col-lg-6">
+    <h1 class="display-5 fw-bold">Discover Your Next Course with AI</h1>
+    <p class="lead">SmartCourse pairs traditional keyword search with state-of-the-art language models so you can explore courses tailored to your interests.</p>
+    <div class="d-flex gap-3 my-4">
+      <a class="btn btn-primary btn-lg" href="{{ url_for('ui.recommend_page') }}">Start Exploring</a>
+      <a class="btn btn-outline-primary btn-lg" href="{{ url_for('ui.about_page') }}">How it Works</a>
+    </div>
+  </div>
+  <div class="col-lg-5 offset-lg-1">
+    <div class="card shadow border-0">
+      <div class="card-body">
+        <h5 class="card-title">Dual-Model Intelligence</h5>
+        <ul class="list-unstyled mb-0">
+          <li class="mb-2">• TF-IDF matching for precise keyword alignment</li>
+          <li class="mb-2">• Neural embeddings for semantic understanding</li>
+          <li class="mb-2">• Interactive dashboard for history and saved picks</li>
+          <li>• Designed for 8,500+ curated course descriptions</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

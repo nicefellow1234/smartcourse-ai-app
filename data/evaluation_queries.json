@@ -1,0 +1,26 @@
+[
+  {
+    "query": "machine learning specialization",
+    "relevant_titles": [
+      "Machine Learning Introduction for Everyone",
+      "Mathematics for Machine Learning Specialization",
+      "Machine Learning Engineering for Production (MLOps) Specialization"
+    ]
+  },
+  {
+    "query": "google cloud data analytics",
+    "relevant_titles": [
+      "Modernizing Data Lakes and Data Warehouses with Google Cloud",
+      "Securing a Cloud SQL for PostgreSQL Instance",
+      "Building Resilient Streaming Analytics Systems on Google Cloud"
+    ]
+  },
+  {
+    "query": "python programming beginner",
+    "relevant_titles": [
+      "Programming for Everybody (Getting Started with Python)",
+      "Python Programming Essentials",
+      "Introduction to Python Programming"
+    ]
+  }
+]

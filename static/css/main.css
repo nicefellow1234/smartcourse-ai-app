@@ -1,0 +1,20 @@
+body {
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+.navbar-brand {
+  letter-spacing: 0.03em;
+}
+
+.card {
+  border-radius: 1rem;
+}
+
+.btn-primary {
+  box-shadow: 0 0.5rem 1rem rgba(13, 110, 253, 0.25);
+}
+
+.progress {
+  height: 0.65rem;
+  border-radius: 999px;
+}

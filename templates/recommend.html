@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row">
+  <div class="col-lg-4 mb-4">
+    <div class="card shadow-sm border-0">
+      <div class="card-body">
+        <h2 class="h4 mb-3">Tell us what you want to learn</h2>
+        <form id="recommendation-form">
+          <div class="mb-3">
+            <label for="preference" class="form-label">Learning goals</label>
+            <textarea class="form-control" id="preference" name="preference" rows="4" placeholder="I want to learn Python for data science" required></textarea>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Model</label>
+            <select class="form-select" id="model" name="model">
+              <option value="hybrid">Hybrid (Recommended)</option>
+              <option value="tfidf">TF-IDF</option>
+              <option value="neural">Neural</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Find Courses</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-8">
+    <div id="results-section" class="d-none">
+      <h2 class="h4 mb-3">Recommendations</h2>
+      <div class="alert alert-info" role="alert" id="results-summary"></div>
+      <div id="recommendations" class="row gy-4"></div>
+    </div>
+    <div id="placeholder" class="text-center text-muted py-5">
+      <p class="mb-0">Submit your learning goals to see personalized courses.</p>
+    </div>
+  </div>
+</div>
+{% endblock %}

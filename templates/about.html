@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-lg-8">
+    <h1 class="h3 mb-4">About SmartCourse</h1>
+    <p>SmartCourse combines classical information retrieval with modern semantic search to deliver tailored course recommendations.</p>
+    <h2 class="h5 mt-4">Technology Stack</h2>
+    <ul>
+      <li>Flask REST API with SQLite persistence</li>
+      <li>TF-IDF vectorization and cosine similarity via scikit-learn</li>
+      <li>Sentence-Transformers (<code>all-MiniLM-L6-v2</code>) embeddings for semantic matching</li>
+      <li>Bootstrap 5 interactive frontend</li>
+    </ul>
+    <h2 class="h5 mt-4">Dataset Preparation</h2>
+    <p>The project expects the Course Recommendation System dataset (8,500+ courses). Data pipelines clean, deduplicate, normalize, and enrich metadata prior to model training.</p>
+    <h2 class="h5 mt-4">Team</h2>
+    <p>Developed under the supervision of Muhammad Bilal (<a href="mailto:bilal.saleem@vu.edu.pk">bilal.saleem@vu.edu.pk</a>).</p>
+  </div>
+</div>
+{% endblock %}

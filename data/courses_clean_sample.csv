@@ -1,0 +1,5 @@
+course_title,university,difficulty,rating,course_description,department,processed_description
+Intro to Python,Coursera,Beginner,4.7,"Learn Python basics including data types, functions, and scripting.",Computer Science,learn python basic include datum type function scripting
+Advanced Data Science,edX,Advanced,4.8,"Explore machine learning, feature engineering, and model deployment.",Data Science,explore machine learn feature engineering model deployment
+Business Analytics,Udacity,Intermediate,4.6,"Analyze business data using statistics, visualization, and dashboards.",Business,analyze business datum statistic visualization dashboard
+Web Development Bootcamp,Coursera,Beginner,4.5,"Build responsive websites using HTML, CSS, JavaScript, and frameworks.",Information Technology,build responsive website html css javascript framework

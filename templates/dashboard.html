@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="d-flex align-items-center mb-4">
+  <div>
+    <h1 class="h3 mb-0">User Dashboard</h1>
+    <p class="text-muted mb-0">Review your recent searches, compare models, and revisit saved courses.</p>
+  </div>
+</div>
+
+<div class="row g-4" id="dashboard-root">
+  <div class="col-lg-6">
+    <div class="card shadow-sm border-0 h-100">
+      <div class="card-body">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h2 class="h5 mb-0">Search History</h2>
+          <div class="d-flex gap-2">
+            <button class="btn btn-sm btn-outline-secondary" id="refresh-history">Refresh</button>
+            <button class="btn btn-sm btn-outline-danger" id="clear-history">Clear</button>
+          </div>
+        </div>
+        <div id="history-list" class="list-group list-group-flush"></div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <div class="card shadow-sm border-0 h-100">
+      <div class="card-body">
+        <h2 class="h5 mb-3">Saved Recommendations</h2>
+        <div id="saved-list" class="list-group list-group-flush"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card shadow-sm border-0 mt-4">
+  <div class="card-body">
+    <h2 class="h5">Model Comparison</h2>
+    <p class="text-muted">Select a search session from history to compare TF-IDF and Neural results side by side.</p>
+    <div id="comparison-panel" class="row g-4"></div>
+  </div>
+</div>
+{% endblock %}
