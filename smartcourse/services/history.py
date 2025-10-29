@@ -59,3 +59,9 @@ class HistoryService:
         deleted = SearchSession.query.delete()
         db.session.commit()
         return deleted
+
+    def clear_saved(self) -> int:
+        """Remove all saved recommendations without deleting search sessions."""
+        deleted = SavedRecommendation.query.delete()
+        db.session.commit()
+        return deleted

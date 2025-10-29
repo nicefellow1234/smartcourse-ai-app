@@ -7,7 +7,7 @@ SmartCourse is a dual-model recommendation platform that surfaces personalized u
 - **Flask REST API** with `/api/recommend`, `/api/history`, and `/api/save` endpoints handled by a persistent SQLite store.
 - **Dual recommendation engines**: TF-IDF + cosine similarity and semantic embeddings via `all-MiniLM-L6-v2`.
 - **Data engineering toolkit** for cleaning, preprocessing (spaCy lemmatization), model training, and evaluation (precision@k, recall@k, hit-rate).
-- **User analytics** including search histories, saved courses, model comparison panels, and one-click history clearing.
+- **User analytics** including search histories, saved courses, model comparison panels, and one-click history/saved clearing.
 
 ## Project layout
 ```

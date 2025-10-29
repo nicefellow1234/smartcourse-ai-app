@@ -86,7 +86,8 @@ function setupDashboard(appState) {
   }
 
   const refreshButton = document.getElementById("refresh-history");
-  const clearButton = document.getElementById("clear-history");
+  const clearHistoryButton = document.getElementById("clear-history");
+  const clearSavedButton = document.getElementById("clear-saved");
   const historyList = document.getElementById("history-list");
 
   if (!historyList) {
@@ -113,12 +114,19 @@ function setupDashboard(appState) {
   });
 
   refreshButton?.addEventListener("click", () => loadDashboard(appState));
-  clearButton?.addEventListener("click", async () => {
+  clearHistoryButton?.addEventListener("click", async () => {
     const confirmed = window.confirm("Clear all search history and saved recommendations?");
     if (!confirmed) {
       return;
     }
     await clearHistory(appState);
+  });
+  clearSavedButton?.addEventListener("click", async () => {
+    const confirmed = window.confirm("Clear all saved recommendations?");
+    if (!confirmed) {
+      return;
+    }
+    await clearSaved(appState);
   });
   loadDashboard(appState);
 }
@@ -183,6 +191,22 @@ async function clearHistory(appState) {
   } catch (error) {
     console.error(error);
     window.alert(`Unable to clear history: ${error.message}`);
+  }
+}
+
+async function clearSaved(appState) {
+  try {
+    const response = await fetch("/api/saved", {method: "DELETE"});
+    if (!response.ok) {
+      const data = await response.json().catch(() => ({}));
+      throw new Error(data.error || "Failed to clear saved recommendations");
+    }
+    // Reload dashboard to refresh counts and saved list
+    await loadDashboard(appState);
+    window.alert("Saved recommendations cleared.");
+  } catch (error) {
+    console.error(error);
+    window.alert(`Unable to clear saved recommendations: ${error.message}`);
   }
 }
 

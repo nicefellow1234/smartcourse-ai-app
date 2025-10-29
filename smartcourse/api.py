@@ -60,6 +60,12 @@ def clear_history():
     return jsonify({"cleared_sessions": deleted})
 
 
+@api_bp.delete("/saved")
+def clear_saved():
+    deleted = history_service.clear_saved()
+    return jsonify({"cleared_saved": deleted})
+
+
 @api_bp.post("/save")
 def save():
     payload = request.get_json(silent=True) or {}
