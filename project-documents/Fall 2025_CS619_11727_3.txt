@@ -1,0 +1,23 @@
+Problem Statement (Group Id: F25PROJECTEC4D8 | Roll No: BC240419615):
+Design and implement SmartCourse, an AI-powered course recommendation system that
+lets university learners compare TF-IDF and semantic (sentence-transformer) rankings
+over an 8,500+ course catalog. The platform must expose a Bootstrap-based multi-page
+UI plus a Flask REST API (/api/recommend, /api/history, /api/save) backed by SQLite.
+Key objectives include: reliable data-cleaning/model-training scripts, persistent
+search history and saved favorites, model comparison dashboards, evaluation tooling,
+and operational logging so stakeholders can trace every recommendation.
+
+What and How to Submit:
+- Prototype/final drop should include the complete SmartCourse codebase (Flask app,
+  smartcourse/ package, scripts/, templates/, static/), trained TF-IDF and neural
+  artifacts under models/, the prepared dataset in data/, and the SQLite instance
+  folder (instance/smartcourse.db). If you regenerate the database, also include a
+  SQL dump or migration script for portability.
+- Place the latest SRS (Fall 2025_CS619_11727_1.docx), Design Document
+  (Fall 2025_CS619_11727_2.docx), and this submission brief inside project-documents/.
+- After verifying that the application runs locally (`PYTHONPATH=. python app.py`) and
+  that the CLI scripts execute without missing dependencies, compress the entire
+  application folder into ZIP or RAR before uploading to VULMS.
+- Only one member per group needs to submit the archive; ensure both names and the
+  group id appear in an included README so evaluation can be attributed correctly.
+
