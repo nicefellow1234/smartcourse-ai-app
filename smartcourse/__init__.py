@@ -1,6 +1,8 @@
 from __future__ import annotations
 
+import logging
 import os
+from logging.handlers import RotatingFileHandler
 from flask import Flask
 
 from .config import get_config
@@ -29,6 +31,7 @@ def create_app(config_name: str | None = None) -> Flask:
 
     register_extensions(app)
     register_blueprints(app)
+    configure_logging(app)
 
     with app.app_context():
         db.create_all()
@@ -44,3 +47,37 @@ def register_extensions(app: Flask) -> None:
 def register_blueprints(app: Flask) -> None:
     app.register_blueprint(ui_bp)
     app.register_blueprint(api_bp, url_prefix="/api")
+
+
+def configure_logging(app: Flask) -> None:
+    log_level_name = os.environ.get("SMARTCOURSE_LOG_LEVEL", "INFO").upper()
+    log_level = getattr(logging, log_level_name, logging.INFO)
+    log_path = os.path.join(app.instance_path, "smartcourse.log")
+    log_path_abs = os.path.abspath(log_path)
+
+    formatter = logging.Formatter("%(asctime)s %(levelname)s [%(name)s] %(message)s")
+
+    existing_handler = next(
+        (
+            handler
+            for handler in app.logger.handlers
+            if isinstance(handler, RotatingFileHandler)
+            and os.path.abspath(getattr(handler, "baseFilename", "")) == log_path_abs
+        ),
+        None,
+    )
+
+    if existing_handler is None:
+        file_handler = RotatingFileHandler(
+            log_path_abs,
+            maxBytes=2 * 1024 * 1024,
+            backupCount=3,
+            encoding="utf-8",
+        )
+        file_handler.setLevel(log_level)
+        file_handler.setFormatter(formatter)
+        app.logger.addHandler(file_handler)
+
+    app.logger.setLevel(log_level)
+    app.logger.propagate = False
+    app.logger.info("SmartCourse logging initialized at %s", log_path_abs)

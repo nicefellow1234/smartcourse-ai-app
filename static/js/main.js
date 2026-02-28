@@ -72,7 +72,7 @@ function setupRecommendationPage(appState) {
     try {
       const courseData = JSON.parse(decodeURIComponent(button.dataset.course));
       await saveRecommendation(appState.sessionId, courseData);
-      setAlert(resultsSummary, "success", `Saved “${courseData.course_title}” to dashboard.`);
+      setAlert(resultsSummary, "success", `Saved "${courseData.course_title}" to dashboard.`);
     } catch (error) {
       setAlert(resultsSummary, "danger", error.message);
     }
@@ -215,7 +215,7 @@ function renderRecommendations(data, container, summaryNode, appState) {
   appState.latestResults = data.results;
 
   const {preference, model, results = {}} = data;
-  setAlert(summaryNode, "info", `Showing ${model} recommendations for “${preference}”`);
+  setAlert(summaryNode, "info", `Showing ${model} recommendations for "${preference}"`);
 
   const entries = [];
   if (model === "hybrid") {
@@ -283,7 +283,7 @@ function renderSavedList(saved) {
       <div class="d-flex justify-content-between align-items-start">
         <div>
           <div class="fw-semibold">${escapeHtml(record.course_title)}</div>
-          <div class="small text-muted">${escapeHtml(record.department || "General")} • ${escapeHtml(modelLabel)}</div>
+          <div class="small text-muted">${escapeHtml(record.department || "General")} - ${escapeHtml(modelLabel)}</div>
           <div class="small text-muted">${escapeHtml(savedLabel)}</div>
         </div>
         <span class="badge text-bg-success">${Math.round((record.relevance_score || 0) * 100)}%</span>
@@ -325,7 +325,7 @@ function renderResultColumn(label, items, options = {}) {
               <div class="d-flex justify-content-between">
                 <div>
                   <h6 class="fw-bold mb-1">${escapeHtml(item.course_title || "Untitled Course")}</h6>
-                  <p class="text-muted small mb-2">${escapeHtml(item.department || "General")} • ${escapeHtml(item.university || "Unknown University")}</p>
+                  <p class="text-muted small mb-2">${escapeHtml(item.department || "General")} - ${escapeHtml(item.university || "Unknown University")}</p>
                 </div>
                 <div class="text-end">
                   <div class="progress mb-1">

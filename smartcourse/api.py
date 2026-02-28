@@ -37,6 +37,14 @@ def recommend():
             "session_id": session.id,
             "created_at": session.created_at.isoformat() if session.created_at else None,
         }
+        current_app.logger.info(
+            "recommendation_created session_id=%s model=%s query=%r tfidf_results=%s neural_results=%s",
+            session.id,
+            recommendation.model,
+            preference[:120],
+            len(recommendation.results.get("tfidf", [])),
+            len(recommendation.results.get("neural", [])),
+        )
         return jsonify(response)
     except FileNotFoundError as exc:
         return jsonify({"error": str(exc)}), 503
@@ -57,12 +65,14 @@ def history():
 @api_bp.delete("/history")
 def clear_history():
     deleted = history_service.clear_all()
+    current_app.logger.info("history_cleared sessions=%s", deleted)
     return jsonify({"cleared_sessions": deleted})
 
 
 @api_bp.delete("/saved")
 def clear_saved():
     deleted = history_service.clear_saved()
+    current_app.logger.info("saved_cleared records=%s", deleted)
     return jsonify({"cleared_saved": deleted})
 
 
@@ -79,6 +89,13 @@ def save():
 
     try:
         record = history_service.save_recommendation(session_id=int(session_id), payload=course)
+        current_app.logger.info(
+            "recommendation_saved record_id=%s session_id=%s model_type=%s course_id=%s",
+            record.id,
+            record.session_id,
+            record.model_type,
+            record.course_id,
+        )
         return jsonify({"saved": record.to_dict()}), 201
     except NoResultFound as exc:
         return jsonify({"error": str(exc)}), 404

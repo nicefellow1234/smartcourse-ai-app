@@ -5,7 +5,9 @@ __pycache__/
 .Python
 .env
 .venv/
+.venv-win/
 venv/
+dist/
 instance/
 artifacts/
 models/
