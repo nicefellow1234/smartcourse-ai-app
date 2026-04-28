@@ -7,7 +7,7 @@ from typing import Mapping, Sequence
 
 import pandas as pd
 
-from .preprocess import preprocess_series
+from .preprocess import WHITESPACE_RE, preprocess_series
 
 CANONICAL_COLUMN_ALIASES: Mapping[str, Sequence[str]] = {
     "course_title": ("Course Name", "Title", "Course Title"),
@@ -49,16 +49,19 @@ class CourseDataPipeline:
         if "Category" in df.columns:
             df["department"] = df["department"].where(df["department"].notna() & (df["department"].str.strip() != ""), df["Category"])
         df["difficulty"] = df["difficulty"].fillna("Not Specified")
-        df["university"] = df["university"].fillna("Independent Provider")
+        df["university"] = self._coalesce_text_columns(df, ["university", "Site", "Created by"]).fillna(
+            "Independent Provider"
+        )
         df["rating"] = df["rating"].map(self._coerce_rating).fillna(0)
         df["course_title"] = df["course_title"].fillna("Untitled Course").str.strip()
         df["course_description"] = df["course_description"].fillna("").str.strip()
+        df["recommendation_text"] = self._build_recommendation_text(df)
         return df.reset_index(drop=True)
 
     def preprocess(self, df: pd.DataFrame) -> pd.DataFrame:
         processed = df.copy()
         processed["processed_description"] = preprocess_series(
-            processed["course_description"], model_name=self.config.spacy_model
+            processed["recommendation_text"], model_name=self.config.spacy_model
         )
         return processed
 
@@ -114,3 +117,52 @@ class CourseDataPipeline:
             return float(match.group(1))
         except ValueError:
             return None
+
+    @staticmethod
+    def _coalesce_text_columns(df: pd.DataFrame, columns: Sequence[str]) -> pd.Series:
+        result = pd.Series([None] * len(df), index=df.index, dtype="object")
+        for column in columns:
+            if column not in df.columns:
+                continue
+            values = df[column].fillna("").astype(str).str.strip()
+            result = result.where(result.fillna("").astype(str).str.strip() != "", values)
+        return result.replace("", pd.NA)
+
+    @staticmethod
+    def _build_recommendation_text(df: pd.DataFrame) -> pd.Series:
+        text_columns = [
+            "course_title",
+            "course_description",
+            "Course Short Intro",
+            "What you learn",
+            "Skills",
+            "Category",
+            "department",
+            "COURSE CATEGORIES",
+            "Course Type",
+            "difficulty",
+            "university",
+            "Instructors",
+            "Prequisites",
+            "Program",
+        ]
+        available = [column for column in text_columns if column in df.columns]
+
+        def join_row(row: pd.Series) -> str:
+            parts: list[str] = []
+            seen: set[str] = set()
+            for column in available:
+                value = row.get(column)
+                if value is None or (isinstance(value, float) and pd.isna(value)):
+                    continue
+                text = str(value).strip()
+                if not text or text.lower() == "nan":
+                    continue
+                normalized = WHITESPACE_RE.sub(" ", text).lower()
+                if normalized in seen:
+                    continue
+                seen.add(normalized)
+                parts.append(text)
+            return " | ".join(parts)
+
+        return df.apply(join_row, axis=1)

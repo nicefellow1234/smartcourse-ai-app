@@ -318,26 +318,57 @@ function renderResultColumn(label, items, options = {}) {
     .map((item) => {
       const score = Math.round((item.score || 0) * 100);
       const encodedCourse = encodeURIComponent(JSON.stringify(item));
+      const courseUrl = sanitizeUrl(item.url);
+      const primaryMeta = [
+        formatRating(item.rating),
+        formatPlainMeta("Reviews", item.reviews),
+        formatPlainMeta("Duration", item.duration),
+        formatPlainMeta("Level", item.difficulty),
+        formatPlainMeta("Price", item.price),
+        formatPlainMeta("Type", item.course_type),
+      ].filter(Boolean);
+      const secondaryMeta = [
+        formatPlainMeta("Language", item.language),
+        formatPlainMeta("Viewers", item.viewers),
+        formatPlainMeta("Program", item.program),
+        formatPlainMeta("Weekly", item.weekly_study),
+      ].filter(Boolean);
+      const skills = splitList(item.skills).slice(0, 8);
+      const instructors = splitList(item.instructors).slice(0, 4);
       return `
         <div class="col-12">
           <div class="card border-0 shadow-sm h-100">
             <div class="card-body d-flex flex-column">
-              <div class="d-flex justify-content-between">
-                <div>
+              <div class="d-flex justify-content-between gap-3">
+                <div class="min-w-0">
                   <h6 class="fw-bold mb-1">${escapeHtml(item.course_title || "Untitled Course")}</h6>
-                  <p class="text-muted small mb-2">${escapeHtml(item.department || "General")} - ${escapeHtml(item.university || "Unknown University")}</p>
+                  <p class="text-muted small mb-2">${escapeHtml(item.department || item.category || "General")} - ${escapeHtml(item.university || "Unknown Provider")}</p>
                 </div>
-                <div class="text-end">
+                <div class="text-end score-box">
                   <div class="progress mb-1">
                     <div class="progress-bar bg-success" role="progressbar" style="width: ${score}%" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                   <span class="badge text-bg-success">${score}%</span>
                 </div>
               </div>
+              ${renderMetaBadges(primaryMeta, "mb-2")}
+              ${renderMetaBadges(secondaryMeta, "mb-2 text-secondary")}
               <p class="flex-grow-1">${escapeHtml(item.description || "No description available.")}</p>
+              ${skills.length ? `<div class="mb-2">${skills.map((skill) => `<span class="badge text-bg-light border me-1 mb-1">${escapeHtml(skill)}</span>`).join("")}</div>` : ""}
+              ${
+                instructors.length
+                  ? `<p class="small text-muted mb-2"><span class="fw-semibold">Instructors:</span> ${escapeHtml(instructors.join(", "))}</p>`
+                  : ""
+              }
+              ${renderExtraDetails(item)}
               ${
                 includeSave
-                  ? `<button class="btn btn-outline-primary btn-sm mt-2 align-self-start" data-model="${escapeHtml(item.model_type || label)}" data-course="${encodedCourse}">Save</button>`
+                  ? `<div class="d-flex flex-wrap gap-2 mt-2">
+                      ${courseUrl ? `<a class="btn btn-primary btn-sm" href="${escapeHtml(courseUrl)}" target="_blank" rel="noopener noreferrer">View Course</a>` : ""}
+                      <button class="btn btn-outline-primary btn-sm" data-model="${escapeHtml(item.model_type || label)}" data-course="${encodedCourse}">Save</button>
+                    </div>`
+                  : courseUrl
+                    ? `<a class="btn btn-primary btn-sm mt-2 align-self-start" href="${escapeHtml(courseUrl)}" target="_blank" rel="noopener noreferrer">View Course</a>`
                   : ""
               }
             </div>
@@ -353,6 +384,81 @@ function renderResultColumn(label, items, options = {}) {
       <div class="row gy-3">${cards}</div>
     </div>
   `;
+}
+
+function renderMetaBadges(values, className = "") {
+  if (!values.length) {
+    return "";
+  }
+  return `<div class="course-meta ${className}">${values.map((value) => `<span>${escapeHtml(value)}</span>`).join("")}</div>`;
+}
+
+function renderExtraDetails(item) {
+  const details = [
+    formatLongMeta("What you'll learn", item.what_you_learn),
+    formatLongMeta("Prerequisites", item.prerequisites),
+    formatLongMeta("Subtitles", item.subtitle_languages),
+    formatLongMeta("Included", item.included),
+  ].filter(Boolean);
+
+  if (!details.length) {
+    return "";
+  }
+
+  return `
+    <details class="course-details small mb-2">
+      <summary>More details</summary>
+      <div class="pt-2">${details.join("")}</div>
+    </details>
+  `;
+}
+
+function formatRating(value) {
+  const cleaned = cleanMetaValue(value);
+  if (!cleaned) {
+    return "";
+  }
+  return `Rating ${cleaned}/5`;
+}
+
+function formatPlainMeta(label, value) {
+  const cleaned = cleanMetaValue(value);
+  return cleaned ? `${label}: ${cleaned}` : "";
+}
+
+function formatLongMeta(label, value) {
+  const cleaned = cleanMetaValue(value);
+  return cleaned ? `<p class="mb-1"><span class="fw-semibold">${escapeHtml(label)}:</span> ${escapeHtml(cleaned)}</p>` : "";
+}
+
+function cleanMetaValue(value) {
+  if (value === undefined || value === null) {
+    return "";
+  }
+  const text = String(value).trim();
+  if (!text || text.toLowerCase() === "nan" || text.toLowerCase() === "not specified") {
+    return "";
+  }
+  return text;
+}
+
+function splitList(value) {
+  const cleaned = cleanMetaValue(value);
+  if (!cleaned) {
+    return [];
+  }
+  return cleaned
+    .split(/,\s*|\|\s*/)
+    .map((item) => item.trim())
+    .filter(Boolean);
+}
+
+function sanitizeUrl(value) {
+  const cleaned = cleanMetaValue(value);
+  if (!cleaned || !/^https?:\/\//i.test(cleaned)) {
+    return "";
+  }
+  return cleaned;
 }
 
 function setAlert(node, status, message) {

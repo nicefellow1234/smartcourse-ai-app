@@ -1,0 +1,533 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [7 0 R 9 0 R 11 0 R 13 0 R 15 0 R 17 0 R] /Count 6 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+6 0 obj
+<< /Length 4438 >>
+stream
+q
+0.080 0.230 0.330 rg
+0 808 595 34 re f
+Q
+BT /F2 10 Tf 1.000 1.000 1.000 rg 1 0 0 1 50 819 Tm (SmartCourse Viva Guide) Tj ET
+BT /F1 9 Tf 0.820 0.900 0.940 rg 1 0 0 1 410 819 Tm (FYP Project Preparation) Tj ET
+q
+0.960 0.980 0.990 rg
+0 0 595 842 re f
+Q
+q
+0.050 0.200 0.280 rg
+0 632 595 210 re f
+Q
+BT /F2 34 Tf 1.000 1.000 1.000 rg 1 0 0 1 50 752 Tm (SmartCourse) Tj ET
+BT /F1 17 Tf 0.820 0.930 0.960 rg 1 0 0 1 50 718 Tm (AI-Powered Course Recommendation System) Tj ET
+BT /F2 22 Tf 1.000 1.000 1.000 rg 1 0 0 1 50 682 Tm (FYP Viva Preparation Guide) Tj ET
+q
+0.910 0.970 0.980 rg
+50 540 495 62 re f
+0.360 0.700 0.760 RG
+50 540 495 62 re S
+Q
+BT /F2 11 Tf 0.060 0.270 0.340 rg 1 0 0 1 64 582 Tm (Viva Schedule) Tj ET
+BT /F1 9 Tf 0.120 0.180 0.200 rg 1 0 0 1 64 564 Tm (Microsoft Teams viva: Thursday, April 30, 2026, 11:00 AM - 11:10 AM. Keep answers) Tj ET
+BT /F1 9 Tf 0.120 0.180 0.200 rg 1 0 0 1 64 551 Tm (short, structured, and connected to the running project.) Tj ET
+BT /F2 13 Tf 0.110 0.320 0.400 rg 1 0 0 1 50 515 Tm (Project Metadata) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 497 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 497 Tm (Group ID: F25PROJECTEC4D8) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 481 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 481 Tm (Roll No: BC240419615) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 465 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 465 Tm (Supervisor: Muhammad Bilal) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 449 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 449 Tm (Project root: /mnt/f/my-projects/smartcourse-ai-app) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 433 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 433 Tm (Generated: 2026-04-29 00:34) Tj ET
+BT /F2 18 Tf 0.050 0.200 0.280 rg 1 0 0 1 50 409 Tm (1. Quick Viva Opening) Tj ET
+q
+0.160 0.500 0.620 RG
+50 399 m 545 399 l S
+Q
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 50 381 Tm (My FYP is SmartCourse, an AI-powered course recommendation system. It helps learners) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 50 367 Tm (find relevant courses based on their learning goals. The system compares two) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 50 353 Tm (recommendation approaches: TF-IDF, which focuses on keyword similarity, and Neural) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 50 339 Tm (sentence embeddings, which understand semantic meaning. It is built with Flask, uses a) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 50 325 Tm (Bootstrap frontend, stores search history and saved recommendations in SQLite, and uses) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 50 311 Tm (trained model artifacts for fast recommendations.) Tj ET
+q
+0.910 0.970 0.980 rg
+50 229 495 75 re f
+0.360 0.700 0.760 RG
+50 229 495 75 re S
+Q
+BT /F2 11 Tf 0.060 0.270 0.340 rg 1 0 0 1 64 284 Tm (How to speak in the viva) Tj ET
+BT /F1 9 Tf 0.120 0.180 0.200 rg 1 0 0 1 64 266 Tm (Start with the problem, then explain your solution, then the architecture, then) Tj ET
+BT /F1 9 Tf 0.120 0.180 0.200 rg 1 0 0 1 64 253 Tm (the algorithm. If a question is difficult, say 'In the current prototype...' and) Tj ET
+BT /F1 9 Tf 0.120 0.180 0.200 rg 1 0 0 1 64 240 Tm (explain the current scope plus a future improvement.) Tj ET
+BT /F2 18 Tf 0.050 0.200 0.280 rg 1 0 0 1 50 201 Tm (2. Problem and Solution) Tj ET
+q
+0.160 0.500 0.620 RG
+50 191 m 545 191 l S
+Q
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 50 173 Tm (Students often struggle to choose suitable courses from a large catalog. Manual) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 50 159 Tm (searching is slow, and basic keyword search may miss useful courses when the wording is) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 50 145 Tm (different. SmartCourse lets users type natural language goals such as 'I want to learn) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 50 131 Tm (Python for data science' and returns ranked course suggestions.) Tj ET
+BT /F2 13 Tf 0.110 0.320 0.400 rg 1 0 0 1 50 109 Tm (Main Features) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 91 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 91 Tm (Multi-page web UI: Home, Recommendations, Dashboard, and About.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 75 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 75 Tm (Natural language input for learning goals.) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Length 5507 >>
+stream
+q
+0.080 0.230 0.330 rg
+0 808 595 34 re f
+Q
+BT /F2 10 Tf 1.000 1.000 1.000 rg 1 0 0 1 50 819 Tm (SmartCourse Viva Guide) Tj ET
+BT /F1 9 Tf 0.820 0.900 0.940 rg 1 0 0 1 410 819 Tm (FYP Project Preparation) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 786 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 786 Tm (Model selection: TF-IDF, Neural, or Hybrid comparison.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 770 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 770 Tm (Score bars and course cards for recommended courses.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 754 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 754 Tm (Search history and saved recommendations stored in SQLite.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 738 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 738 Tm (Side-by-side model comparison dashboard.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 722 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 722 Tm (Operational logging in instance/smartcourse.log.) Tj ET
+BT /F2 18 Tf 0.050 0.200 0.280 rg 1 0 0 1 50 698 Tm (3. Technology Stack) Tj ET
+q
+0.160 0.500 0.620 RG
+50 688 m 545 688 l S
+Q
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 670 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 670 Tm (Backend: Python, Flask, Flask-SQLAlchemy, Flask-Cors.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 654 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 654 Tm (Frontend: Bootstrap 5, HTML templates, vanilla JavaScript, Fetch API.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 638 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 638 Tm (AI/NLP: scikit-learn, spaCy, sentence-transformers, joblib.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 622 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 622 Tm (Database: SQLite.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 606 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 606 Tm (Dataset: raw CSV has 8,092 rows; cleaned CSV currently has 4,939 usable course) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 592 Tm (records.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 576 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 576 Tm (Model artifacts: models/tfidf_recommender.joblib and) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 562 Tm (models/neural_recommender.joblib.) Tj ET
+BT /F2 18 Tf 0.050 0.200 0.280 rg 1 0 0 1 50 538 Tm (4. Directory Structure) Tj ET
+q
+0.160 0.500 0.620 RG
+50 528 m 545 528 l S
+Q
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 50 510 Tm (Think of this project like a web app where Flask replaces Express/Laravel, templates) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 50 496 Tm (replace frontend views, and the AI model files act like prebuilt search indexes.) Tj ET
+q
+0.960 0.980 0.990 rg
+50 191 495 296 re f
+0.800 0.880 0.910 RG
+50 191 495 296 re S
+Q
+BT /F3 8 Tf 0.110 0.180 0.220 rg 1 0 0 1 62 469 Tm (smartcourse-ai-app/) Tj ET
+BT /F3 8 Tf 0.110 0.180 0.220 rg 1 0 0 1 62 457 Tm (|-- app.py) Tj ET
+BT /F3 8 Tf 0.110 0.180 0.220 rg 1 0 0 1 62 445 Tm (|-- requirements.txt) Tj ET
+BT /F3 8 Tf 0.110 0.180 0.220 rg 1 0 0 1 62 433 Tm (|-- README.md) Tj ET
+BT /F3 8 Tf 0.110 0.180 0.220 rg 1 0 0 1 62 421 Tm (|-- smartcourse/) Tj ET
+BT /F3 8 Tf 0.110 0.180 0.220 rg 1 0 0 1 62 409 Tm (|   |-- __init__.py) Tj ET
+BT /F3 8 Tf 0.110 0.180 0.220 rg 1 0 0 1 62 397 Tm (|   |-- api.py) Tj ET
+BT /F3 8 Tf 0.110 0.180 0.220 rg 1 0 0 1 62 385 Tm (|   |-- views.py) Tj ET
+BT /F3 8 Tf 0.110 0.180 0.220 rg 1 0 0 1 62 373 Tm (|   |-- config.py) Tj ET
+BT /F3 8 Tf 0.110 0.180 0.220 rg 1 0 0 1 62 361 Tm (|   |-- extensions.py) Tj ET
+BT /F3 8 Tf 0.110 0.180 0.220 rg 1 0 0 1 62 349 Tm (|   |-- models/) Tj ET
+BT /F3 8 Tf 0.110 0.180 0.220 rg 1 0 0 1 62 337 Tm (|   |-- services/) Tj ET
+BT /F3 8 Tf 0.110 0.180 0.220 rg 1 0 0 1 62 325 Tm (|   |-- data/) Tj ET
+BT /F3 8 Tf 0.110 0.180 0.220 rg 1 0 0 1 62 313 Tm (|   `-- utils/) Tj ET
+BT /F3 8 Tf 0.110 0.180 0.220 rg 1 0 0 1 62 301 Tm (|-- templates/) Tj ET
+BT /F3 8 Tf 0.110 0.180 0.220 rg 1 0 0 1 62 289 Tm (|-- static/) Tj ET
+BT /F3 8 Tf 0.110 0.180 0.220 rg 1 0 0 1 62 277 Tm (|-- data/) Tj ET
+BT /F3 8 Tf 0.110 0.180 0.220 rg 1 0 0 1 62 265 Tm (|-- models/) Tj ET
+BT /F3 8 Tf 0.110 0.180 0.220 rg 1 0 0 1 62 253 Tm (|-- instance/) Tj ET
+BT /F3 8 Tf 0.110 0.180 0.220 rg 1 0 0 1 62 241 Tm (|-- scripts/) Tj ET
+BT /F3 8 Tf 0.110 0.180 0.220 rg 1 0 0 1 62 229 Tm (|-- tests/) Tj ET
+BT /F3 8 Tf 0.110 0.180 0.220 rg 1 0 0 1 62 217 Tm (`-- project-documents/) Tj ET
+BT /F3 8 Tf 0.110 0.180 0.220 rg 1 0 0 1 62 205 Tm (        ) Tj ET
+BT /F2 13 Tf 0.110 0.320 0.400 rg 1 0 0 1 50 170 Tm (What Each Folder Means) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 152 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 152 Tm (app.py: the main entry point, similar to server.js or index.js. It starts the) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 138 Tm (Flask server.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 122 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 122 Tm (requirements.txt: Python dependency list, similar to package.json dependencies.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 106 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 106 Tm (smartcourse/: the main backend package. It contains routes, services,) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 92 Tm (configuration, database models, and AI model code.) Tj ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 8 0 R >>
+endobj
+10 0 obj
+<< /Length 5706 >>
+stream
+q
+0.080 0.230 0.330 rg
+0 808 595 34 re f
+Q
+BT /F2 10 Tf 1.000 1.000 1.000 rg 1 0 0 1 50 819 Tm (SmartCourse Viva Guide) Tj ET
+BT /F1 9 Tf 0.820 0.900 0.940 rg 1 0 0 1 410 819 Tm (FYP Project Preparation) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 786 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 786 Tm (templates/: server-rendered HTML pages such as base.html, home.html,) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 772 Tm (recommend.html, dashboard.html, and about.html.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 756 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 756 Tm (static/: frontend assets. main.js handles fetch calls and UI rendering; main.css) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 742 Tm (contains styling.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 726 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 726 Tm (data/: raw, cleaned, sample, and evaluation datasets.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 710 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 710 Tm (models/: trained AI model artifacts loaded by the app at runtime.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 694 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 694 Tm (instance/: runtime files such as SQLite database and logs.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 678 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 678 Tm (scripts/: maintenance scripts for preparing data, building models, evaluating) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 664 Tm (models, exporting SQL, and packaging.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 648 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 648 Tm (project-documents/: SRS, design, submission, and viva documents.) Tj ET
+BT /F2 18 Tf 0.050 0.200 0.280 rg 1 0 0 1 50 624 Tm (5. Request Flow) Tj ET
+q
+0.160 0.500 0.620 RG
+50 614 m 545 614 l S
+Q
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 50 596 Tm (When a learner searches for a course, the app moves through this flow:) Tj ET
+q
+0.960 0.980 0.990 rg
+50 459 495 128 re f
+0.800 0.880 0.910 RG
+50 459 495 128 re S
+Q
+BT /F3 8 Tf 0.110 0.180 0.220 rg 1 0 0 1 62 569 Tm (Browser form) Tj ET
+BT /F3 8 Tf 0.110 0.180 0.220 rg 1 0 0 1 62 557 Tm (  -> static/js/main.js sends fetch\('/api/recommend'\)) Tj ET
+BT /F3 8 Tf 0.110 0.180 0.220 rg 1 0 0 1 62 545 Tm (  -> smartcourse/api.py receives the POST request) Tj ET
+BT /F3 8 Tf 0.110 0.180 0.220 rg 1 0 0 1 62 533 Tm (  -> RecommendationService validates and runs selected model) Tj ET
+BT /F3 8 Tf 0.110 0.180 0.220 rg 1 0 0 1 62 521 Tm (  -> TFIDFRecommender or NeuralRecommender ranks courses) Tj ET
+BT /F3 8 Tf 0.110 0.180 0.220 rg 1 0 0 1 62 509 Tm (  -> HistoryService saves the search session in SQLite) Tj ET
+BT /F3 8 Tf 0.110 0.180 0.220 rg 1 0 0 1 62 497 Tm (  -> JSON response returns to the browser) Tj ET
+BT /F3 8 Tf 0.110 0.180 0.220 rg 1 0 0 1 62 485 Tm (  -> JavaScript renders recommendation cards) Tj ET
+BT /F3 8 Tf 0.110 0.180 0.220 rg 1 0 0 1 62 473 Tm (        ) Tj ET
+BT /F2 18 Tf 0.050 0.200 0.280 rg 1 0 0 1 50 435 Tm (6. Coding Part Explained) Tj ET
+q
+0.160 0.500 0.620 RG
+50 425 m 545 425 l S
+Q
+BT /F2 13 Tf 0.110 0.320 0.400 rg 1 0 0 1 50 402 Tm (app.py) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 50 384 Tm (This is the startup file. It imports create_app\(\) from smartcourse, reads command-line) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 50 370 Tm (host/port/debug options, and starts the Flask development server.) Tj ET
+q
+0.960 0.980 0.990 rg
+50 257 495 104 re f
+0.800 0.880 0.910 RG
+50 257 495 104 re S
+Q
+BT /F3 8 Tf 0.110 0.180 0.220 rg 1 0 0 1 62 343 Tm (from smartcourse import create_app) Tj ET
+BT /F3 8 Tf 0.110 0.180 0.220 rg 1 0 0 1 62 331 Tm (app = create_app\(\)) Tj ET
+BT /F3 8 Tf 0.110 0.180 0.220 rg 1 0 0 1 62 319 Tm () Tj ET
+BT /F3 8 Tf 0.110 0.180 0.220 rg 1 0 0 1 62 307 Tm (if __name__ == "__main__":) Tj ET
+BT /F3 8 Tf 0.110 0.180 0.220 rg 1 0 0 1 62 295 Tm (    app.run\(host=cli_args.host, port=cli_args.port, ) Tj ET
+BT /F3 8 Tf 0.110 0.180 0.220 rg 1 0 0 1 62 283 Tm (debug=resolve_debug\(cli_args\)\)) Tj ET
+BT /F3 8 Tf 0.110 0.180 0.220 rg 1 0 0 1 62 271 Tm (        ) Tj ET
+BT /F2 13 Tf 0.110 0.320 0.400 rg 1 0 0 1 50 236 Tm (smartcourse/__init__.py) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 50 218 Tm (This is the application factory. It creates the Flask app, loads config, initializes) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 50 204 Tm (database/CORS, registers UI and API blueprints, configures logging, and creates database) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 50 190 Tm (tables.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 173 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 173 Tm (register_extensions\(app\): connects SQLAlchemy and CORS.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 157 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 157 Tm (register_blueprints\(app\): attaches UI routes and API routes.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 141 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 141 Tm (configure_logging\(app\): writes logs to instance/smartcourse.log.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 125 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 125 Tm (db.create_all\(\): creates SQLite tables if they do not exist.) Tj ET
+BT /F2 13 Tf 0.110 0.320 0.400 rg 1 0 0 1 50 104 Tm (smartcourse/views.py) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 50 86 Tm (This file contains page routes. These routes do not return JSON; they render HTML) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 50 72 Tm (templates.) Tj ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 10 0 R >>
+endobj
+12 0 obj
+<< /Length 5879 >>
+stream
+q
+0.080 0.230 0.330 rg
+0 808 595 34 re f
+Q
+BT /F2 10 Tf 1.000 1.000 1.000 rg 1 0 0 1 50 819 Tm (SmartCourse Viva Guide) Tj ET
+BT /F1 9 Tf 0.820 0.900 0.940 rg 1 0 0 1 410 819 Tm (FYP Project Preparation) Tj ET
+q
+0.960 0.980 0.990 rg
+50 714 495 80 re f
+0.800 0.880 0.910 RG
+50 714 495 80 re S
+Q
+BT /F3 8 Tf 0.110 0.180 0.220 rg 1 0 0 1 62 776 Tm (/            -> templates/home.html) Tj ET
+BT /F3 8 Tf 0.110 0.180 0.220 rg 1 0 0 1 62 764 Tm (/recommend   -> templates/recommend.html) Tj ET
+BT /F3 8 Tf 0.110 0.180 0.220 rg 1 0 0 1 62 752 Tm (/dashboard   -> templates/dashboard.html) Tj ET
+BT /F3 8 Tf 0.110 0.180 0.220 rg 1 0 0 1 62 740 Tm (/about       -> templates/about.html) Tj ET
+BT /F3 8 Tf 0.110 0.180 0.220 rg 1 0 0 1 62 728 Tm (        ) Tj ET
+BT /F2 13 Tf 0.110 0.320 0.400 rg 1 0 0 1 50 693 Tm (smartcourse/api.py) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 50 675 Tm (This is the REST API controller layer. It receives browser requests, validates input,) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 50 661 Tm (calls services, and returns JSON.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 644 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 644 Tm (POST /api/recommend: gets preference, model, top_n; returns ranked courses and) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 630 Tm (creates a search session.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 614 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 614 Tm (GET /api/history: returns recent search sessions and saved recommendations.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 598 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 598 Tm (POST /api/save: saves a selected course against a search session.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 582 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 582 Tm (DELETE /api/history and DELETE /api/saved: clear stored records.) Tj ET
+BT /F2 13 Tf 0.110 0.320 0.400 rg 1 0 0 1 50 561 Tm (smartcourse/services/recommendation.py) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 50 543 Tm (This is the business logic for recommendations. It lazy-loads model files only when) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 50 529 Tm (needed, runs the selected model, normalizes scores, and cleans values before sending) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 50 515 Tm (them to the frontend.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 498 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 498 Tm (tfidf_model property loads models/tfidf_recommender.joblib.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 482 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 482 Tm (neural_model property loads models/neural_recommender.joblib.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 466 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 466 Tm (recommend\(preference, model, top_n\) runs tfidf, neural, or both.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 450 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 450 Tm (_normalize_scores\(\) converts scores into a frontend-friendly 0 to 1 range.) Tj ET
+BT /F2 13 Tf 0.110 0.320 0.400 rg 1 0 0 1 50 429 Tm (smartcourse/services/history.py) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 50 411 Tm (This service handles persistence. It creates search sessions, saves selected) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 50 397 Tm (recommendations, reads history, and clears records.) Tj ET
+BT /F2 13 Tf 0.110 0.320 0.400 rg 1 0 0 1 50 375 Tm (smartcourse/models/db_models.py) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 50 357 Tm (This file defines the database tables using SQLAlchemy.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 340 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 340 Tm (SearchSession stores query text, TF-IDF results, Neural results, timestamp, and) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 326 Tm (related saved recommendations.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 310 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 310 Tm (SavedRecommendation stores selected course details, model type, score, and save) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 296 Tm (time.) Tj ET
+BT /F2 13 Tf 0.110 0.320 0.400 rg 1 0 0 1 50 275 Tm (static/js/main.js) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 50 257 Tm (This is the browser-side logic. It listens for form submission, sends API requests with) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 50 243 Tm (fetch\(\), renders recommendation cards, saves courses, and loads dashboard data.) Tj ET
+BT /F2 18 Tf 0.050 0.200 0.280 rg 1 0 0 1 50 218 Tm (7. AI Part Explained Simply) Tj ET
+q
+0.160 0.500 0.620 RG
+50 208 m 545 208 l S
+Q
+BT /F2 13 Tf 0.110 0.320 0.400 rg 1 0 0 1 50 185 Tm (TF-IDF Recommender) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 50 167 Tm (TF-IDF is a keyword-based technique. It converts course descriptions into vectors where) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 50 153 Tm (important words receive higher weights. The user query is preprocessed with spaCy,) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 50 139 Tm (transformed into the same vector space, and compared against all courses using cosine) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 50 125 Tm (similarity.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 108 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 108 Tm (Good for exact terms such as Python, SQL, React, cloud, or cybersecurity.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 92 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 92 Tm (Fast and explainable.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 76 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 76 Tm (May miss results when meaning is similar but words are different.) Tj ET
+endstream
+endobj
+13 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 12 0 R >>
+endobj
+14 0 obj
+<< /Length 6085 >>
+stream
+q
+0.080 0.230 0.330 rg
+0 808 595 34 re f
+Q
+BT /F2 10 Tf 1.000 1.000 1.000 rg 1 0 0 1 50 819 Tm (SmartCourse Viva Guide) Tj ET
+BT /F1 9 Tf 0.820 0.900 0.940 rg 1 0 0 1 410 819 Tm (FYP Project Preparation) Tj ET
+BT /F2 13 Tf 0.110 0.320 0.400 rg 1 0 0 1 50 781 Tm (Neural Recommender) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 50 763 Tm (The neural model uses sentence-transformers/all-MiniLM-L6-v2. It converts full course) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 50 749 Tm (descriptions into embeddings that capture meaning. The query is also converted into an) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 50 735 Tm (embedding, then cosine similarity ranks the closest courses.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 718 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 718 Tm (Good for semantic meaning and natural language queries.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 702 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 702 Tm (Can match related ideas even when exact words differ.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 686 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 686 Tm (More computationally expensive than TF-IDF, so embeddings are precomputed and) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 672 Tm (saved.) Tj ET
+BT /F2 13 Tf 0.110 0.320 0.400 rg 1 0 0 1 50 651 Tm (Hybrid Mode) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 50 633 Tm (Hybrid mode runs both TF-IDF and Neural models and displays them side by side. It is) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 50 619 Tm (designed for comparison rather than merging both scores into one final ranking.) Tj ET
+BT /F2 18 Tf 0.050 0.200 0.280 rg 1 0 0 1 50 594 Tm (8. Data Pipeline) Tj ET
+q
+0.160 0.500 0.620 RG
+50 584 m 545 584 l S
+Q
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 50 566 Tm (The data pipeline prepares messy CSV course data before model training.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 549 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 549 Tm (Loads raw course dataset from data/courses_dataset.csv.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 533 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 533 Tm (Renames different column names into standard names like course_title, university,) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 519 Tm (difficulty, rating, course_description, and department.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 503 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 503 Tm (Removes duplicates and invalid rows.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 487 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 487 Tm (Drops missing or very short course descriptions.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 471 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 471 Tm (Fills missing department, difficulty, university, and rating values.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 455 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 455 Tm (Normalizes text using lowercase conversion, HTML removal, alphabetic cleanup,) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 441 Tm (whitespace cleanup, stopword removal, and lemmatization.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 425 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 425 Tm (Saves cleaned output to data/courses_clean.csv.) Tj ET
+BT /F2 18 Tf 0.050 0.200 0.280 rg 1 0 0 1 50 401 Tm (9. Evaluation) Tj ET
+q
+0.160 0.500 0.620 RG
+50 391 m 545 391 l S
+Q
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 50 373 Tm (The project includes scripts/evaluate_models.py. It loads evaluation_queries.json and) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 50 359 Tm (calculates Precision@K, Recall@K, and Hit Rate.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 342 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 342 Tm (Precision@K: out of the top K recommended courses, how many are relevant?) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 326 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 326 Tm (Recall@K: out of all known relevant courses, how many did the model find in top K?) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 310 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 310 Tm (Hit Rate: did the top K results contain at least one relevant course?) Tj ET
+q
+0.910 0.970 0.980 rg
+50 216 495 88 re f
+0.360 0.700 0.760 RG
+50 216 495 88 re S
+Q
+BT /F2 11 Tf 0.060 0.270 0.340 rg 1 0 0 1 64 284 Tm (Local environment note) Tj ET
+BT /F1 9 Tf 0.120 0.180 0.200 rg 1 0 0 1 64 266 Tm (During inspection, evaluation failed because the saved joblib artifacts were built) Tj ET
+BT /F1 9 Tf 0.120 0.180 0.200 rg 1 0 0 1 64 253 Tm (with a different scikit-learn/pandas version than the current virtual environment.) Tj ET
+BT /F1 9 Tf 0.120 0.180 0.200 rg 1 0 0 1 64 240 Tm (The fix is to rebuild models in the current environment using) Tj ET
+BT /F1 9 Tf 0.120 0.180 0.200 rg 1 0 0 1 64 227 Tm (scripts/prepare_data.py and scripts/build_models.py.) Tj ET
+BT /F2 18 Tf 0.050 0.200 0.280 rg 1 0 0 1 50 188 Tm (10. Likely Instructor Questions) Tj ET
+q
+0.160 0.500 0.620 RG
+50 178 m 545 178 l S
+Q
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 160 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 160 Tm (Why did you use TF-IDF? It is fast, simple, explainable, and strong for keyword-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 146 Tm (based retrieval.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 130 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 130 Tm (Why use sentence transformers? They capture semantic meaning, so related phrases) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 116 Tm (can match even without exact words.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 100 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 100 Tm (What is cosine similarity? It measures how close two vectors are by comparing) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 86 Tm (their direction.) Tj ET
+endstream
+endobj
+15 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 14 0 R >>
+endobj
+16 0 obj
+<< /Length 4234 >>
+stream
+q
+0.080 0.230 0.330 rg
+0 808 595 34 re f
+Q
+BT /F2 10 Tf 1.000 1.000 1.000 rg 1 0 0 1 50 819 Tm (SmartCourse Viva Guide) Tj ET
+BT /F1 9 Tf 0.820 0.900 0.940 rg 1 0 0 1 410 819 Tm (FYP Project Preparation) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 786 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 786 Tm (Why Flask? It is lightweight, easy to structure, and suitable for REST APIs plus) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 772 Tm (rendered web pages.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 756 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 756 Tm (Why SQLite? It is simple, file-based, and enough for a prototype that stores) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 742 Tm (history and saved recommendations.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 726 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 726 Tm (What are limitations? It depends on description quality, has no) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 712 Tm (login/personalization yet, and evaluation data is small.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 696 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 696 Tm (How can it improve? Add user accounts, feedback-based ranking, filters, better) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 682 Tm (evaluation data, and cloud deployment.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 666 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 666 Tm (What happens if model files are missing? The API returns a service error and asks) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 652 Tm (to rebuild models.) Tj ET
+BT /F2 18 Tf 0.050 0.200 0.280 rg 1 0 0 1 50 628 Tm (11. Demo Script) Tj ET
+q
+0.160 0.500 0.620 RG
+50 618 m 545 618 l S
+Q
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 600 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 600 Tm (Open the app and show the Home page.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 584 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 584 Tm (Go to Recommendations.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 568 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 568 Tm (Enter a query such as: I want to learn Python for data science.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 552 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 552 Tm (Select Hybrid to show both TF-IDF and Neural results.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 536 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 536 Tm (Point out scores, course titles, departments, and descriptions.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 520 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 520 Tm (Save one recommendation.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 504 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 504 Tm (Open Dashboard and show search history, saved recommendations, and side-by-side) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 490 Tm (model comparison.) Tj ET
+BT /F2 10 Tf 0.160 0.500 0.620 rg 1 0 0 1 54 474 Tm (-) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 68 474 Tm (Mention that every search session is stored in SQLite and logged for traceability.) Tj ET
+BT /F2 18 Tf 0.050 0.200 0.280 rg 1 0 0 1 50 450 Tm (12. Final Memory Card) Tj ET
+q
+0.160 0.500 0.620 RG
+50 440 m 545 440 l S
+Q
+q
+0.910 0.970 0.980 rg
+50 357 495 75 re f
+0.360 0.700 0.760 RG
+50 357 495 75 re S
+Q
+BT /F2 11 Tf 0.060 0.270 0.340 rg 1 0 0 1 64 412 Tm (One-sentence summary) Tj ET
+BT /F1 9 Tf 0.120 0.180 0.200 rg 1 0 0 1 64 394 Tm (SmartCourse is a Flask-based AI course recommendation system that compares TF-IDF) Tj ET
+BT /F1 9 Tf 0.120 0.180 0.200 rg 1 0 0 1 64 381 Tm (keyword search with neural semantic search over a cleaned course catalog, while) Tj ET
+BT /F1 9 Tf 0.120 0.180 0.200 rg 1 0 0 1 64 368 Tm (storing user searches and saved recommendations in SQLite.) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 50 337 Tm (If you forget details during the viva, return to this structure: problem, solution,) Tj ET
+BT /F1 10 Tf 0.130 0.150 0.170 rg 1 0 0 1 50 323 Tm (architecture, algorithm, database, limitations, future work.) Tj ET
+endstream
+endobj
+17 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 16 0 R >>
+endobj
+xref
+0 18
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000155 00000 n 
+0000000225 00000 n 
+0000000300 00000 n 
+0000000368 00000 n 
+0000004858 00000 n 
+0000005004 00000 n 
+0000010563 00000 n 
+0000010709 00000 n 
+0000016468 00000 n 
+0000016616 00000 n 
+0000022548 00000 n 
+0000022696 00000 n 
+0000028834 00000 n 
+0000028982 00000 n 
+0000033269 00000 n 
+trailer
+<< /Size 18 /Root 1 0 R >>
+startxref
+33417
+%%EOF

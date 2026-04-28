@@ -18,3 +18,28 @@ body {
   height: 0.65rem;
   border-radius: 999px;
 }
+
+.score-box {
+  flex: 0 0 4.5rem;
+}
+
+.course-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.course-meta span {
+  background: #f4f7f9;
+  border: 1px solid #dbe5ea;
+  border-radius: 0.35rem;
+  color: #32444d;
+  font-size: 0.78rem;
+  line-height: 1.2;
+  padding: 0.22rem 0.45rem;
+}
+
+.course-details summary {
+  cursor: pointer;
+  font-weight: 600;
+}

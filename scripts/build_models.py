@@ -40,7 +40,7 @@ def main() -> None:
     tfidf_model.save(tfidf_path)
     print(f"Saved TF-IDF model to {tfidf_path}")
 
-    neural_model = NeuralRecommender(NeuralConfig(model_name=embedding_model))
+    neural_model = NeuralRecommender(NeuralConfig(model_name=embedding_model, text_column="recommendation_text"))
     neural_model.fit(df)
     neural_path = os.path.join(output_dir, "neural_recommender.joblib")
     neural_model.save(neural_path)
