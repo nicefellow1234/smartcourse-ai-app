@@ -277,14 +277,31 @@ function renderSavedList(saved) {
     const modelLabel = (record.model_type || "unknown").toUpperCase();
     const savedAt = record.saved_at ? new Date(record.saved_at) : null;
     const savedLabel = savedAt && !Number.isNaN(savedAt.getTime()) ? savedAt.toLocaleString() : "Unknown time";
+    const metadata = record.metadata || {};
+    const courseUrl = sanitizeUrl(metadata.url);
+    const savedMeta = [
+      formatRating(metadata.rating),
+      formatPlainMeta("Reviews", metadata.reviews),
+      formatPlainMeta("Duration", metadata.duration),
+      formatPlainMeta("Level", metadata.difficulty),
+      formatPlainMeta("Price", metadata.price),
+      formatPlainMeta("Provider", metadata.university),
+    ].filter(Boolean);
     const item = document.createElement("div");
     item.className = "list-group-item";
     item.innerHTML = `
-      <div class="d-flex justify-content-between align-items-start">
-        <div>
+      <div class="d-flex justify-content-between align-items-start gap-3">
+        <div class="min-w-0">
           <div class="fw-semibold">${escapeHtml(record.course_title)}</div>
           <div class="small text-muted">${escapeHtml(record.department || "General")} - ${escapeHtml(modelLabel)}</div>
           <div class="small text-muted">${escapeHtml(savedLabel)}</div>
+          ${renderMetaBadges(savedMeta, "mt-2")}
+          ${
+            metadata.skills
+              ? `<div class="mt-2">${splitList(metadata.skills).slice(0, 6).map((skill) => `<span class="badge text-bg-light border me-1 mb-1">${escapeHtml(skill)}</span>`).join("")}</div>`
+              : ""
+          }
+          ${courseUrl ? `<a class="btn btn-primary btn-sm mt-2" href="${escapeHtml(courseUrl)}" target="_blank" rel="noopener noreferrer">View Course</a>` : ""}
         </div>
         <span class="badge text-bg-success">${Math.round((record.relevance_score || 0) * 100)}%</span>
       </div>
