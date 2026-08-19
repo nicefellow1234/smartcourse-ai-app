@@ -10,7 +10,7 @@ venv/
 dist/
 instance/
 artifacts/
-models/
+/models/
 .data/
 .ipynb_checkpoints/
 .DS_Store
