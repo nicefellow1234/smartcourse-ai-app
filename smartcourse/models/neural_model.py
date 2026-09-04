@@ -8,6 +8,8 @@ import joblib
 import numpy as np
 import pandas as pd
 
+from ..utils.model_artifacts import load_joblib
+
 
 @dataclass(slots=True)
 class NeuralConfig:
@@ -15,6 +17,9 @@ class NeuralConfig:
     text_column: str = "recommendation_text"
     batch_size: int = 32
     normalize_embeddings: bool = True
+    # Keep this field in the serialized config for compatibility with model
+    # artifacts created before progress reporting was hard-coded.
+    show_progress_bar: bool = True
 
 
 class NeuralRecommender:
@@ -33,7 +38,7 @@ class NeuralRecommender:
             encoder.encode(
                 texts,
                 batch_size=self.config.batch_size,
-                show_progress_bar=True,
+                show_progress_bar=self.config.show_progress_bar,
                 convert_to_numpy=True,
                 normalize_embeddings=self.config.normalize_embeddings,
             ),
@@ -82,10 +87,29 @@ class NeuralRecommender:
 
     @classmethod
     def load(cls, path: str) -> "NeuralRecommender":
-        model = joblib.load(path)
-        if not isinstance(model, cls):
-            raise TypeError(f"Expected {cls.__name__} artifact, got {type(model).__name__}")
-        return model
+        artifact = load_joblib(path)
+
+        # Current artifacts contain the recommender instance. Older builds
+        # stored its components in a dictionary; migrate that format here so
+        # existing model files remain usable on Windows and WSL.
+        if isinstance(artifact, cls):
+            artifact.config = _coerce_config(artifact.config)
+            if not artifact.records and isinstance(getattr(artifact, "dataset", None), pd.DataFrame):
+                artifact.records = _records(artifact.dataset)
+            return artifact
+
+        if isinstance(artifact, dict):
+            dataset = artifact.get("dataset")
+            if not isinstance(dataset, pd.DataFrame):
+                raise TypeError("Legacy neural artifact is missing its dataset.")
+            model = cls(_coerce_config(artifact.get("config")))
+            model.embeddings = artifact.get("embeddings")
+            model.records = _records(dataset)
+            if model.embeddings is None:
+                raise TypeError("Legacy neural artifact is missing its embeddings.")
+            return model
+
+        raise TypeError(f"Expected {cls.__name__} artifact, got {type(artifact).__name__}")
 
     def _get_encoder(self) -> Any:
         if self._encoder is None:
@@ -93,6 +117,19 @@ class NeuralRecommender:
 
             self._encoder = SentenceTransformer(self.config.model_name, device="cpu")
         return self._encoder
+
+
+def _coerce_config(config: Any) -> NeuralConfig:
+    """Return a complete config even when loading older slotted dataclasses."""
+    return NeuralConfig(
+        model_name=getattr(config, "model_name", "sentence-transformers/all-MiniLM-L6-v2"),
+        text_column=getattr(config, "text_column", "recommendation_text"),
+        batch_size=int(getattr(config, "batch_size", 32)),
+        normalize_embeddings=bool(
+            getattr(config, "normalize_embeddings", True)
+        ),
+        show_progress_bar=bool(getattr(config, "show_progress_bar", True)),
+    )
 
 
 def _text_series(frame: pd.DataFrame, preferred_column: str) -> pd.Series:

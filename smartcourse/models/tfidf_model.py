@@ -11,6 +11,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 from ..data.preprocess import normalize_text
+from ..utils.model_artifacts import load_joblib
 
 
 @dataclass(slots=True)
@@ -18,6 +19,10 @@ class TFIDFConfig:
     spacy_model: str = "en_core_web_sm"
     text_column: str = "processed_description"
     ngram_range: tuple[int, int] = (1, 2)
+    # Keep this field in the serialized config for compatibility with model
+    # artifacts created before the value was made configurable.
+    min_df: int = 1
+    max_df: float = 1.0
 
 
 class TFIDFRecommender:
@@ -29,7 +34,11 @@ class TFIDFRecommender:
 
     def fit(self, frame: pd.DataFrame) -> "TFIDFRecommender":
         texts = _text_series(frame, self.config.text_column)
-        self.vectorizer = TfidfVectorizer(ngram_range=self.config.ngram_range, min_df=1)
+        self.vectorizer = TfidfVectorizer(
+            ngram_range=self.config.ngram_range,
+            min_df=self.config.min_df,
+            max_df=self.config.max_df,
+        )
         self.matrix = self.vectorizer.fit_transform(texts.tolist())
         self.records = _records(frame)
         return self
@@ -57,10 +66,41 @@ class TFIDFRecommender:
 
     @classmethod
     def load(cls, path: str) -> "TFIDFRecommender":
-        model = joblib.load(path)
-        if not isinstance(model, cls):
-            raise TypeError(f"Expected {cls.__name__} artifact, got {type(model).__name__}")
-        return model
+        artifact = load_joblib(path)
+
+        # Current artifacts contain the recommender instance. Older builds
+        # stored its components in a dictionary, so migrate that format when
+        # loading instead of forcing every checkout to retrain the models.
+        if isinstance(artifact, cls):
+            artifact.config = _coerce_config(artifact.config)
+            if not artifact.records and isinstance(getattr(artifact, "dataset", None), pd.DataFrame):
+                artifact.records = _records(artifact.dataset)
+            return artifact
+
+        if isinstance(artifact, dict):
+            dataset = artifact.get("dataset")
+            if not isinstance(dataset, pd.DataFrame):
+                raise TypeError("Legacy TF-IDF artifact is missing its dataset.")
+            model = cls(_coerce_config(artifact.get("config")))
+            model.vectorizer = artifact.get("vectorizer")
+            model.matrix = artifact.get("matrix")
+            model.records = _records(dataset)
+            if model.vectorizer is None or model.matrix is None:
+                raise TypeError("Legacy TF-IDF artifact is missing its vectorizer or matrix.")
+            return model
+
+        raise TypeError(f"Expected {cls.__name__} artifact, got {type(artifact).__name__}")
+
+
+def _coerce_config(config: Any) -> TFIDFConfig:
+    """Return a complete config even when loading older slotted dataclasses."""
+    return TFIDFConfig(
+        spacy_model=getattr(config, "spacy_model", "en_core_web_sm"),
+        text_column=getattr(config, "text_column", "processed_description"),
+        ngram_range=getattr(config, "ngram_range", (1, 2)),
+        min_df=int(getattr(config, "min_df", 1)),
+        max_df=float(getattr(config, "max_df", 1.0)),
+    )
 
 
 def _text_series(frame: pd.DataFrame, preferred_column: str) -> pd.Series:
